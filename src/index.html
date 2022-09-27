@@ -11,24 +11,32 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label class="form_field">Surname:
+        <label class="form_field">
+          Surname:
           <input
             type="text"
             name="surname"
             autocomplete="off"
           >
         </label>
-        <label class="form_field">Name:
+
+        <label class="form_field">
+          Name:
           <input
             type="text"
             name="name"
             autocomplete="off"
           >
         </label>
-        <label class="form_field">How old are You?
+
+        <label class="form_field">
+          How old are You?
           <input
               type="number"
               value="12"
@@ -37,29 +45,37 @@
               max="100"
           >
         </label>
-        <label class="form_field">Full date of birth:
+
+        <label class="form_field">
+          Full date of birth:
           <input
             type="date"
             name="dateOfBirth"
           >
         </label>
-        <label class="form_field">I accept the term of the agreement
+
+        <label class="form_field">
+          I accept the term of the agreement
           <input
             type="checkbox"
             name="agreement"
           >
         </label>
       </fieldset>
+
       <fieldset class="fieldset">
         <legend>Registration</legend>
-        <label class="form_field">E-mail:
+        <label class="form_field">
+          E-mail:
           <input
             type="email"
             name="email"
             placeholder="email@example.com"
           >
         </label>
-        <label class="form_field">Password:
+
+        <label class="form_field">
+          Password:
           <input
             type="password"
             name="password"
@@ -68,30 +84,32 @@
           >
         </label>
       </fieldset>
+
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <label class="form_field">Do you love cats?
-          <label>
-            <input
-              type="radio"
-              name="catLover"
-              value="yes"
-            >
+          Do you love cats?
+        <label>
+          <input
+          type="radio"
+          name="catLover"
+          value="yes"
+          >
             Yes
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="catLover"
-              value="no"
-            >
-            No
-          </label>
         </label>
+        <label>
+          <input
+          type="radio"
+          name="catLover"
+          value="no"
+          >
+            No
+        </label>
+
         <label class="form_field">
           What is your favorite color?
           <input type="color">
         </label>
+
         <label class="form_field">
           What time do you go to bed?
           <input
@@ -100,6 +118,7 @@
             step="1"
           >
         </label>
+
         <label class="form_field">
           What are your favorite brand of cars?
           <select
@@ -112,6 +131,7 @@
             <option value="Lada">Lada</option>
           </select>
         </label>
+
         <label class="form_field">
           How do you rate our work?
           <input
@@ -122,11 +142,14 @@
           >
         </label>
       </fieldset>
+
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
+
         <label class="form_field">Comments:
           <textarea name="feedback"></textarea>
         </label>
+
         <label class="form_field">Would you recommend us?
           <select name="recommedation">
             <option value="yes" selected>yes</option>
@@ -134,6 +157,7 @@
           </select>
         </label>
       </fieldset>
+      
       <button class="fieldset" type="submit">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
